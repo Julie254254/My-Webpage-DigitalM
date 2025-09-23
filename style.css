@@ -1,0 +1,311 @@
+/* Minimal, Modern, Chic Portfolio - Pink & Rose Gold */
+
+:root {
+  --pink: #ffb6c1;
+  --rose-gold: #b76e79;
+  --light-pink: #ffe4ec;
+  --white: #fff;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--light-pink);
+  color: var(--rose-gold);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* Navbar */
+header {
+  background: linear-gradient(to right, var(--pink), var(--rose-gold));
+  padding: 1.2rem 0;
+  box-shadow: 0 2px 8px rgba(183,110,121,0.05);
+}
+
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--rose-gold);
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--rose-gold);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a.active,
+nav a:hover {
+  background: var(--pink);
+  color: var(--white);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--rose-gold);
+  object-fit: cover;
+  margin-bottom: 1.2rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.accent {
+  color: var(--rose-gold);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--rose-gold);
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: var(--rose-gold);
+  color: var(--white);
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  background: var(--pink);
+  color: var(--rose-gold);
+}
+
+/* Centered Section Utility */
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Slider */
+.slider {
+  margin: 2rem auto 0 auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(183,110,121,0.07);
+  margin-bottom: 1rem;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: opacity 0.5s;
+}
+
+.slide.active {
+  display: block;
+  position: relative;
+  opacity: 1;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  background: var(--rose-gold);
+  border-radius: 50%;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  border: none;
+}
+
+.slider-dot.active {
+  opacity: 1;
+  background: var(--pink);
+}
+
+/* About, Skills, Social, Testimonials */
+.about, .skills, .social-media, .testimonials, .contact {
+  padding: 2.5rem 1rem 1.5rem 1rem;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+  background: var(--white);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(183,110,121,0.06);
+}
+
+.about h2, .skills h2, .social-media h2, .testimonials h2, .contact h2 {
+  color: var(--rose-gold);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.skills ul, .social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--pink);
+  font-size: 1rem;
+}
+
+.skills li:last-child {
+  border-bottom: none;
+}
+
+.social-media ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-media a {
+  color: var(--rose-gold);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.social-media a:hover {
+  color: var(--pink);
+}
+
+.testimonials blockquote {
+  font-style: italic;
+  background: var(--light-pink);
+  border-left: 4px solid var(--rose-gold);
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  color: var(--rose-gold);
+  position: relative;
+}
+
+.testimonials span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--pink);
+  font-size: 0.95em;
+}
+
+/* Contact Form */
+form {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--pink);
+  background: var(--light-pink);
+  color: var(--rose-gold);
+  font-size: 1rem;
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--rose-gold);
+}
+
+#formMsg {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: var(--rose-gold);
+  color: var(--white);
+  padding: 1.2rem 0 0.7rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+  border-radius: 0 0 14px 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .about, .skills, .social-media, .testimonials, .contact, .slider {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .slider-container {
+    height: 180px;
+  }
+  .slide, .slide.active {
+    height: 180px;
+  }
+}
