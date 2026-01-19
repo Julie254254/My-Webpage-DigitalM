@@ -14,7 +14,7 @@ A modern, minimal, and chic digital marketing portfolio website built with HTML5
 
 ## Live Site
 
-[https://YOUR-USERNAME.github.io/my-portfolio/](https://YOUR-USERNAME.github.io/my-portfolio/)
+https://vercel.com/cia-jms-projects/my-webpage-digital-m/38iHDVEkKcsvYTaC5iHBbc8jhwpT
 
 ## How to Use
 
